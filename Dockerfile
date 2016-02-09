@@ -4,16 +4,12 @@ MAINTAINER Sam Hamilton <sam@sh81.com>
 # Upgrade
 RUN apt-get update && apt-get upgrade -y
 
-# Moqui, Mantle and SimpleScreens
-WORKDIR /opt
+# Moqui Framework and Moqui Runtime
 COPY moqui-framework /opt/moqui
 COPY moqui-runtime /opt/moqui/runtime
-COPY mantle-udm /opt/moqui/runtime/component/mantle-udm
-COPY mantle-usl /opt/moqui/runtime/component/mantle-usl
-COPY SimpleScreens /opt/moqui/runtime/component/SimpleScreens
 
+# We build Moqui at this point to cache most of jar dependencies
 WORKDIR /opt/moqui
-RUN ./gradlew cleanAll
 RUN ./gradlew build
 
 # Clean up APT when done.
