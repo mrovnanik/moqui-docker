@@ -1,0 +1,15 @@
+[submodule "moqui-framework"]
+	path = moqui-framework
+	url = https://github.com/moqui/moqui-framework.git
+[submodule "moqui-runtime"]
+	path = moqui-runtime
+	url = https://github.com/moqui/moqui-runtime.git
+[submodule "mantle-usl"]
+	path = mantle-usl
+	url = https://github.com/moqui/mantle-usl.git
+[submodule "SimpleScreens"]
+	path = SimpleScreens
+	url = https://github.com/moqui/SimpleScreens.git
+[submodule "mantle-udm"]
+	path = mantle-udm
+	url = https://github.com/moqui/mantle-udm.git
