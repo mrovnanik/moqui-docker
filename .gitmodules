@@ -13,3 +13,12 @@
 [submodule "mantle-udm"]
 	path = mantle-udm
 	url = https://github.com/moqui/mantle-udm.git
+[submodule "mantle-edi"]
+	path = mantle-edi
+	url = https://github.com/moqui/mantle-edi.git
+[submodule "mantle-oagis"]
+	path = mantle-oagis
+	url = https://github.com/moqui/mantle-oagis.git
+[submodule "mantle-ubpl"]
+	path = mantle-ubpl
+	url = https://github.com/moqui/mantle-ubpl.git
